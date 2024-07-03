@@ -1,0 +1,16 @@
+let obj = {
+  movie: 'Tenet',
+  year: 2020,
+  genre: 'thriller',
+  director: 'Christopher Nolan',
+  getInfo:  function() {
+    for (let value in obj) {
+        if (typeof this[value] === 'function') continue;
+        console.log(value + ': ' + this[value]);
+
+    }
+  }
+};
+obj.getInfo()
+
+obj.newProperty = "USA,UK"
