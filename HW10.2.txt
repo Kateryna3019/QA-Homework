@@ -1,0 +1,5 @@
+
+let words = "Wonderful, Joyful, Happiness, Time, Task, Apple";
+let regex = /\b[^Aa\s]{6,}\b/g;
+let result = words.match(regex);
+console.log(result);
